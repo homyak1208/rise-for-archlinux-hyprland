@@ -1,0 +1,36 @@
+# Общий формат строки (символы и модули)
+format = """
+[┌─](bold #9ca3af)$directory$git_branch$git_status$python$golang$rust$node
+[└─>](bold #9ca3af) """
+
+# Настройка модуля директории (путь к папке)
+[directory]
+style = "bold #e5e7eb" # Светло-серый (White Smoke)
+truncation_length = 3
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# Символ ввода (курсор)
+[character]
+success_symbol = "[➜](bold #d1d5db)" # Светло-серый при успехе
+error_symbol = "[✗](bold #ef4444)" # Оставляем красный для ошибок
+
+# Ветка Git
+[git_branch]
+symbol = " "
+style = "italic #9ca3af" # Серый потемнее для веток
+format = "on [$symbol$branch]($style) "
+
+# Статус Git
+[git_status]
+style = "#9ca3af"
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+
+# Настройка системной информации (опционально)
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[$user]($style) "
+
+[hostname]
+ssh_only = true
+style = "bold #9ca3af"
