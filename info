@@ -1,0 +1,68 @@
+######################
+##ВАЖНЫЕ ДЕРИКТОРИИ:##
+######################
+
+-/etc/xdg/waybar                                       #изначнальная дериктория waybar
+-/home/user/.config/waybar/style.css                   #waybar (панель сверху)
+-/home/user/.config/waybar/config.jsonc                #waybar (я не буду повторять два раза)
+-/home/user/.config/hypr/hyprland.conf                 #главная дерриктория hyprland
+-/home/user/.config/fastfetch/config.jsonc             #fastfetch (красивая картинка, информация при входе в терминал) (картинка 1854_1.png)
+-/.config/hypr/hyprlock.conf                           #hyprlock (экран блокировки)
+~/.config/tmux/tmux.conf                               #tmux (выводит  cmatrix и cava)
+~/.config/cava/config                                  #cava config (эквалайзер)
+
+
+###################
+##ВАЖНЫЕ КОМАНДЫ:##
+###################
+
+##(ЧТОБЫ ВОЙТИ В ДРУГОГО ПОЛЬЗОВАТЕЛЯ ИЛИ ДРУГУЮ СЕССИЮ, нужно вернуть sddm(мы находимся в greetd))
+sudo systemctl disable greetd
+sudo systemctl enable sddm
+##(чтобы войти обратно поменяйте местами команды(выключите sddm, а greetd включите))
+
+htop                                                   #активные задачи
+cmatrix -b -C white                                    #красивый поток кода, -b жирный шрифт, -C white белый цвет
+cava                                                   #эквалайзер для музыки
+lavat -c red                                           #лава лампа
+tty-clock -s -c -b                                     #время
+cbonsai -l                                             #дерево растет в живом времени
+
+
+
+######################
+##КОМБИНАЦИИ КЛАВИШ:##
+######################
+
+(SUPER, mod, Mainmod = win)
+SUPER+Q = terminal(kitty)
+SUPER+E = file manager (dolphin)
+SUPER+C = close activity window
+SUPER+V = toggle floating
+SUPER+[1-9] = workspace 1-9
+SUPER+B = google
+SUPER+M = exit hyprland
+SUPER+R = search (hyprlauncher)
+SUPER+P  = cmatrix и cava через tmux
+
+ctrl+alt+f2 = terminal (в случае если все сломалось открывает базовый терминал)
+ctrl+shift+f2 = vim kitty (настройка терминала kitty)
+
+
+
+
+
+
+для vim:
+
+#все команды в режиме visual
+
+i = insert mode
+esc = visual(exit insert mode)
+y = copy
+p = paste
+/ = search
+:wq = write and quit
+
+
+
